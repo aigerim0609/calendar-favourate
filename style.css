@@ -1,0 +1,100 @@
+@import url('https://');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing: border-box; стилдерге озгоруп кетиши мумкун */
+}
+body{
+    height: 100vh;
+    background-image: url(https://img.freepik.com/premium-photo/black-red-background-with-red-line_78492-53254.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 4px solid #ff0061;
+    border-radius: 20px;
+    width: 80vw;
+    min-width: 250px;
+    height: 20vw;
+    min-height: 100px;
+    background-color: #000017;
+    font-family: sans-serif;
+    transition: 1s;
+    cursor: pointer;
+    z-index: 2;
+}
+.container:hover{
+    opacity: 0;
+
+}
+.container_double{
+    border: 4px solid #ff0061;
+    border-radius: 20px;
+    width: 80vw;
+    min-width: 250px;
+    height: 20vw;
+    min-height: 100px;
+    background-color: #000017;
+    font-family: sans-serif;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#time{
+    font-size: 35px;
+    font-weight: 600;
+    color: #ff0061;
+    letter-spacing: 0.3vw;
+
+}
+#date{
+     height: 15vw;
+     min-height: 72.5px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 35px;
+     font-weight: 600;
+     border-radius: 16px 16px 0 0;
+     color: #ff0061;
+     letter-spacing: 0.3vw;
+}
+#fullYear{
+    border-top: 0.5px solid #ff0061 ;
+    height: 5vw;
+    min-height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0061;
+    font-size: 1.5vw;
+    font-weight: 200;
+    border-radius: 0 0 16px 16px;
+    letter-spacing: 0.2vw;
+}
+@media (max-width:1250px) {
+    .date{
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    #time{
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    .container{
+        transition: 0.5s;
+    }
+}
+@media (max-width:850px) {
+     .date{
+        font-size: 25px;
+     }
+     .fullYear{
+        font-size: 14px;
+     }
+}
